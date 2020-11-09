@@ -6,7 +6,7 @@ const productosContainer = document.getElementById("productos-container");
 let editStatus = false;
 let id = '';
 
-const saveProducto = (categoria,coordenadaLatitud,coordenadaLongitud,descripcion,favorito,imagen,nombre,precio,tienda,ubicacion) =>
+const saveProducto = (categoria, coordenadaLatitud, coordenadaLongitud, descripcion, favorito, imagen, nombre, precio, tienda, ubicacion) =>
   db.collection("Productos").doc().set({
     categoria,
     coordenadaLatitud,
@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
       const producto = doc.data();
 
       productosContainer.innerHTML +=
-      `<div class="card">
+        `<div class="card mt-4">
         <img src="${producto.imagen}" class="img-fluid w-100"/>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">${producto.nombre}</li>
@@ -106,20 +106,20 @@ window.addEventListener("DOMContentLoaded", async (e) => {
 productosForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const nombre =productosForm["productos-nombre"];
-  const precio =productosForm["productos-precio"];
-  const descripcion =productosForm["productos-descripcion"];
-  const ubicacion =productosForm["productos-ubicacion"];
-  const favorito =productosForm["productos-favorito"];
-  const imagen =productosForm["productos-imagen"];
-  const categoria =productosForm["productos-categoria"];
-  const tienda =productosForm["productos-tienda"];
-  const coordenadaLatitud =productosForm["productos-coordenadaLatitud"];
-  const coordenadaLongitud =productosForm["productos-coordenadaLongitud"];
+  const nombre = productosForm["productos-nombre"];
+  const precio = productosForm["productos-precio"];
+  const descripcion = productosForm["productos-descripcion"];
+  const ubicacion = productosForm["productos-ubicacion"];
+  const favorito = productosForm["productos-favorito"];
+  const imagen = productosForm["productos-imagen"];
+  const categoria = productosForm["productos-categoria"];
+  const tienda = productosForm["productos-tienda"];
+  const coordenadaLatitud = productosForm["productos-coordenadaLatitud"];
+  const coordenadaLongitud = productosForm["productos-coordenadaLongitud"];
 
   try {
     if (!editStatus) {
-      await saveProducto(categoria.value,coordenadaLatitud.value,coordenadaLongitud.value,descripcion.value,favorito.value,imagen.value,nombre.value,precio.value,tienda.value,ubicacion.value);
+      await saveProducto(categoria.value, coordenadaLatitud.value, coordenadaLongitud.value, descripcion.value, favorito.value, imagen.value, nombre.value, precio.value, tienda.value, ubicacion.value);
     } else {
       await updateProducto(id, {
         categoria: categoria.value,
@@ -141,6 +141,8 @@ productosForm.addEventListener("submit", async (e) => {
 
     productosForm.reset();
     nombre.focus();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+
   } catch (error) {
     console.log(error);
   }
