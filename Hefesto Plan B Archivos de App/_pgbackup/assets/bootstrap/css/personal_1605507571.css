@@ -1,7 +1,7 @@
 @media (min-width: 100px) {
-    .titulo-view {
-        font-size: 1.5rem;
-        text-align: center;
+    #titulo-view{
+      font-size: 1.5rem;
+      text-align: center;
     }
 
     .productos-imagen {
@@ -17,12 +17,6 @@
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         font-size: 0.75rem;
-    }
-
-    .logotipoHEFESTOnavBar {
-        width: 100%;
-        height: 11vw;
-        object-fit: contain;
     }
 }
 
@@ -41,15 +35,4 @@
         height: 15vw;
         object-fit: contain;
     }
-
-    .logotipoHEFESTOnavBar {
-        width: 100%;
-        height: 4vw;
-        object-fit: contain;
-    }
-}
-
-hr {
-    margin-left: 0;
-    margin-right: 0;
 }

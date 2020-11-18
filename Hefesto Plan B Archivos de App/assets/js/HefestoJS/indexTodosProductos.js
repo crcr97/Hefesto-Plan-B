@@ -1,24 +1,46 @@
 const db = firebase.firestore();
-const productContainer = document.getElementById("products-container");
+const productosContainer = document.getElementById("productos-container");
 
-const onGetTasks = (callback) => db.collection("Productos").onSnapshot(callback);
+const onGetProductos = (callback) => db.collection("Productos").onSnapshot(callback);
+const getProducto = (id) => db.collection("Productos").doc(id).get();
 
 window.addEventListener("DOMContentLoaded", async (e) => {
-  onGetTasks((querySnapshot) => {
-    productContainer.innerHTML = "";
+  onGetProductos((querySnapshot) => {
+    productosContainer.innerHTML = "";
 
     querySnapshot.forEach((doc) => {
-      const product = doc.data();
+      const producto = doc.data();
 
-      productContainer.innerHTML += 
-      `<a href="vistaDonaciones.html" class="d-flex menuPrincipal ml-2 mr-2"><div class="card mb-3 text-dark">
-        <img src="${product.imagen}" class="w-100"/>
-        <div class="card-body">
-            <h5 class="card-title font-weight-bolder" id="productName">${product.nombre}</h5>
-            <p class="card-text" id="productDescription">${product.descripcion}</p>
-            <p class="card-text"><small class="text-muted" id="productLocation">${product.tienda}</small></p>
-        </div>
-    </div>  </a>`;
+      productosContainer.innerHTML +=
+        `<div class="col-xs-6 col-sm-6 col-md-3 px-1 py-4 d-flex">
+          <a data-id="${doc.id}" href="#" class="producto-card border  text-decoration-none">
+            <div class="card text-dark">
+              <img src="${producto.imagen}" class="card-body p-2 w-100 mb-n1 productos-imagen"/>
+              <div class="card-body px-2 pt-0">
+                <h5 class="card-title font-weight-bolder productos-info  mb-0" id="productName">$${producto.precio}</h5>
+                <p class="card-text productos-info mg-0" id="productDescription">${producto.nombre}</p>
+                <p class="card-text productos-info">
+                <i class='fas fa-map-marker-alt'></i><small class="text-muted" id="productLocation"> ${producto.ubicacion}</small></p>
+              </div>
+            </div>
+          </a>
+        </div>`;
     });
+
+    const productoSeleccionado = productosContainer.querySelectorAll(".producto-card");
+    productoSeleccionado.forEach((seleccion) => {
+      seleccion.addEventListener("click", async (e) => {
+        try {
+          const doc = await getProducto(e.currentTarget.dataset.id);
+          const producto = doc.data();
+          console.log(producto.nombre);
+          localStorage.setItem("prueba", producto.nombre);
+          window.location.href = "vistaDetalleDeProducto.html";
+        } catch (error) {
+          console.log(error);
+        }
+      });
+    });
+
   });
 });

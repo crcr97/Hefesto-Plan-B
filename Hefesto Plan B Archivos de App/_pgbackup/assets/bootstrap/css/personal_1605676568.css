@@ -1,5 +1,5 @@
 @media (min-width: 100px) {
-    .titulo-view {
+    #titulo-view {
         font-size: 1.5rem;
         text-align: center;
     }
@@ -19,7 +19,7 @@
         font-size: 0.75rem;
     }
 
-    .logotipoHEFESTOnavBar {
+    .logotipoHEFESTOnavBar{
         width: 100%;
         height: 11vw;
         object-fit: contain;
@@ -42,7 +42,8 @@
         object-fit: contain;
     }
 
-    .logotipoHEFESTOnavBar {
+    
+    .logotipoHEFESTOnavBar{
         width: 100%;
         height: 4vw;
         object-fit: contain;
@@ -52,4 +53,4 @@
 hr {
     margin-left: 0;
     margin-right: 0;
-}
+  }

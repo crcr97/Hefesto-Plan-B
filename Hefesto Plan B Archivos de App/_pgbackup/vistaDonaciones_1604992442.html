@@ -178,15 +178,96 @@
                         <div class="mt-n3 row">
                             <div class="col">
                                 <div class="align-content-center align-items-center d-flex d-lg-flex d-md-flex d-sm-flex justify-content-center">
-                                    <h3 style="color: #4a4a4a;" class="align-middle align-self-center font-weight-bold text-center text-md-center text-sm-center" id="productos-nombre">Detalle de Producto</h3>
+                                    <h3 style="color: #4a4a4a;" class="align-middle align-self-center font-weight-bold text-center text-md-center text-sm-center">Haz tu Donacion</h3>
                                 </div>
                             </div>
                         </div>
                         <hr class="mb-4 mt-0 my-0 sidebar-divider">
                         <div class="mt-3 row">
-                            <div class="col container">
-                                <div class="align-content-center align-content-lg-center align-content-md-center align-content-sm-center align-items-end align-items-lg-end align-items-md-end align-items-sm-end d-flex d-lg-flex d-md-flex d-sm-flex flex-lg-row flex-lg-wrap flex-md-row flex-md-wrap flex-row flex-sm-row flex-sm-wrap flex-wrap justify-content-end justify-content-lg-end justify-content-md-end justify-content-sm-end" id="products-container">
-</div>
+                            <div class="align-content-center col col-md-6 d-flex flex-column flex-fill flex-grow-1 justify-content-center">
+                                <div class="align-content-center align-items-center justify-content-center mb-3  row">
+                                    <div class="align-content-center align-items-center col col-md-11 d-flex justify-content-center">
+                                        <img src="assets/img/donaciones/logoTinMarin.png" class="logoTinMarin w-50"> 
+                                    </div>
+                                </div>
+                                <div class="align-content-center align-items-center justify-content-center row">
+                                    <div class="align-content-center align-items-center col col-md-11 d-flex justify-content-center">
+                                        <div class="btn-group btn-group-toggle mb-3 w-100" data-toggle="buttons"> 
+                                            <label class="active btn btn-outline-primary btn-toggle"> 
+                                                <input type="radio" name="options" autocomplete="off" checked="">Unica
+                                            </label>                                             
+                                            <label class="btn btn-outline-primary btn-toggle"> 
+                                                <input type="radio" name="options" autocomplete="off">Mensual
+                                            </label>
+                                        </div>                                         
+                                    </div>
+                                </div>
+                                <div class="align-content-center align-items-center justify-content-center row">
+                                    <div class="align-content-center align-items-center col col-md-11 d-flex justify-content-center">
+                                        <div class="btn-group btn-group-toggle mb-3 mt-3 w-100" data-toggle="buttons"> 
+                                            <label class="btn btn-outline-primary btn-toggle active"> 
+                                                <input type="radio" name="options" autocomplete="off" checked=""> $1
+                                            </label>                                             
+                                            <label class="btn btn-outline-primary btn-toggle"> 
+                                                <input type="radio" name="options" autocomplete="off"> $2
+                                            </label>
+                                            <label class="btn btn-outline-primary btn-toggle"> 
+                                                <input type="radio" name="options" autocomplete="off"> $5
+                                            </label>
+                                            <label class="btn btn-outline-primary btn-toggle"> 
+                                                <input type="radio" name="options" autocomplete="off"> $10
+                                            </label>
+                                            <label class="btn btn-outline-primary btn-toggle"> 
+                                                <input type="radio" name="options" autocomplete="off"> $20
+                                            </label>
+                                        </div>                                         
+                                    </div>
+                                </div>
+                                <div class="align-content-center align-items-center justify-content-center mb-3 mt-3 row">
+                                    <div class="col col-md-11">
+                                        <div class="input-group w-100">
+                                            <div class="input-group-prepend"> 
+                                                <div class="input-group-number input-group-text">$</div>                                                 
+                                            </div>                                             
+                                            <input type="number" class="form-control" placeholder="Otra Cantidad">
+                                        </div>                                         
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="align-content-center align-items-center d-flex justify-content-center row">
+                                    <div class="col col-md-11">
+                                        <div class="row">
+                                            <form role="form" class="col"> 
+                                                <div class="form-group mb-3 mt-2"> 
+                                                    <label for="exampleInputEmail1">Nombre Completo</label>                                                     
+                                                    <input type="text" class="form-control" id="exampleInputEmail1"> 
+                                                </div>                                                 
+                                                <div class="form-group mb-3 mt-3"> 
+                                                    <label for="exampleInputPassword1">Correo Electronico</label>                                                     
+                                                    <input type="email" class="form-control" id="exampleInputPassword1"> 
+                                                </div>
+                                                <div class="form-group mb-3 mt-3"> 
+                                                    <label for="exampleInputPassword1">Documento de Identidad</label>                                                     
+                                                    <input type="number" class="form-control" id="exampleInputPassword1"> 
+                                                </div>
+                                                <div class="form-group mb-3 mt-3"> 
+                                                    <label for="exampleInputPassword1">NIT</label>                                                     
+                                                    <input type="number" class="form-control" id="exampleInputPassword1"> 
+                                                </div>                                                 
+                                                <div class="form-check mb-3 mt-3"> 
+                                                    <input class="form-check-input" type="checkbox" value="" id="exampleInputCheck1"> 
+                                                    <label class="form-check-label" for="exampleInputCheck1">Deseo recibo de donacion</label>                                                     
+                                                </div>                                                 
+                                                <div class="align-content-center align-items-center d-flex justify-content-center mb-3 mt-3 row">
+                                                    <div class="align-content-center align-items-center col d-flex justify-content-center">
+                                                        <button class="btn btn-danger font-weight-bold w-50">Donar!</button>                                                         
+                                                    </div>
+                                                </div>                                                 
+                                            </form>
+                                        </div>                                         
+                                    </div>
+                                </div>                                 
                             </div>
                         </div>
                     </div>
