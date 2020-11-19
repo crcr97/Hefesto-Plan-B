@@ -57,7 +57,7 @@
                             <button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button">
                                 <i class="fas fa-bars"></i>
                             </button>
-                            <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <form class="d-none d-sm-none form-inline ml-md-3 mr-auto mw-100 my-2 my-md-0 navbar-search">
                                 <div class="input-group">
                                     <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
                                     <div class="input-group-append">
@@ -67,11 +67,11 @@
                                     </div>
                                 </div>
                             </form>
-                            <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <h6 class="font-weight-bolder mb-n1 text-center text-light">HEFESTO</h6>
+                            <ul class="flex-nowrap ml-auto nav navbar-nav">
+                                <h6 class="font-weight-bolder mb-n1 mr-5 pr-1 text-center text-light">HEFESTO</h6>
                             </ul>
                             <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <li class="nav-item dropdown d-sm-none no-arrow">
+                                <li class="d-none d-sm-none dropdown nav-item no-arrow">
                                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
                                     <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown" style="background-color: rgba(0, 0, 0, 0.78);">
                                         <form class="form-inline mr-auto navbar-search w-100">
@@ -93,11 +93,81 @@
                         <div class="mt-n3 row">
                             <div class="col">
                                 <div class="align-content-center align-items-center d-flex justify-content-center">
-                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center" style="color: #4a4a4a;" id="titulo-view">Todos los Productos</h3>
+                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;">Detalle de Producto</h3>
                                 </div>
                             </div>
                         </div>
                         <hr class="mb-n1 mt-n1"/>
+                        <div class="mt-4 row">
+                            <div class="align-content-center align-items-center col col-md-6 d-flex flex-column justify-content-center mb-3 ">
+                                <div class="align-content-center align-items-center justify-content-center  row">
+                                    <div class="align-content-center align-items-center col col-md-11 d-flex flex-column justify-content-center">
+                                        <img src="https://aeon.com.sv/web/image/product.product/6086/image_1024/%5B6658%5D%20Memoria%20MicroSDXC-SDHC%20UHS-I%20U3%20Class%2010%20Adata%2064GB%20V30S%20Premier%20PRO?unique=e1e08bd" id="detalleImagenProducto" class="img-fluid img-responsive"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="align-content-center align-items-center col col-md-6 d-flex flex-column flex-fill flex-grow-1 flex-md-column flex-md-wrap flex-sm-column flex-sm-nowrap justify-content-center mb-3 pl-0 pr-0">
+                                <div class="align-content-center align-items-center col d-flex flex-column justify-content-center  pl-0 pr-0">
+                                    <div class="col-12 d-flex flex-column justify-content-center">
+                                        <div class="align-content-center align-items-center justify-content-center row">
+                                            <div class="align-content-center align-items-start col-6 d-flex flex-column justify-content-center ">
+                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" id="detallePrecioProducto" style="color: #000000;">Heading 5&nbsp;</h5> 
+                                            </div>
+                                            <div class="align-content-center align-items-end col-6 d-flex flex-column justify-content-center ">
+                                                <i class="fa-heart fa-lg fas" id="detalleFavoritoProducto"></i> 
+                                            </div>
+                                        </div>
+                                        <div class="align-content-center align-items-center justify-content-center row">
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
+                                                <p id="detalleNombreProducto" class="font-weight-bold productos-detalle-textos">Paragraph</p> 
+                                            </div>
+                                        </div>
+                                        <div class="align-content-center align-items-center justify-content-center row">
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center "> 
+                                                <p id="detalleUbicacionProducto" class="font-weight-bold mt-n2 productos-detalle-textos"><i class='fas fa-map-marker-alt'></i> Paragraph</p>
+                                            </div>
+                                        </div>
+                                        <hr class="mt-1"/>
+                                        <div class="align-content-center align-items-center justify-content-center mt-2 row">
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
+                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" style="color: #000000;">Descripcion</h5> 
+                                            </div>
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
+                                                <p id="detalleDescripcionProducto" class="font-weight-bold productos-detalle-textos">Paragraph</p> 
+                                            </div>
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
+                                                <p id="detalleCategoriaProducto" class="font-weight-bold productos-detalle-textos">Categoria:</p> 
+                                            </div>
+                                        </div>
+                                        <hr class="mt-1"/>
+                                        <div class="align-content-center align-items-center justify-content-center mt-2 row">
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
+                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" style="color: #000000;">Tienda</h5> 
+                                            </div>
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
+                                                <p id="detalleTiendaProducto" class="font-weight-bold productos-detalle-textos">Paragraph</p> 
+                                            </div>
+                                            <div class="align-content-center col-12 flex-row">
+                                                <div class="align-content-center align-items-center d-flex flex-row justify-content-md-start justify-content-start row">
+                                                    <button type="button" class="align-self-start btn btn-primary btn-sm mr-1 mt-1" id="detalleTelefonoProducto">
+                                                        <i class="fa-phone fa-pull-right fas pt-1"></i>Llamar
+                                                    </button>
+                                                    <button type="button" class="btn btn-sm btn-success mr-1 mt-1" id="detalleMapaProducto">
+                                                        <i class='fa-map-marker-alt fa-pull-right fas mt-1'></i>Mapa
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary btn-sm mt-1" id="detalleEmailProducto">
+                                                        <i class='fa-envelope fa-pull-right fas mt-1'></i>Email
+                                                    </button>
+                                                </div>                                                 
+                                            </div>
+                                            <div class="align-content-center col-12 d-md-none flex-row">
+                                                <div class="pg-empty-placeholder row"></div>                                                 
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
