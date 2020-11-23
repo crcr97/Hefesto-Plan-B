@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
       const producto = doc.data();
 
       productosContainer.innerHTML +=
-        `<div class="col-xs-6 col-sm-6 col-md-3 px-1 py-4 d-flex">
+        `<div class="col-xs-6 col-sm-6 col-md-3 px-1 py-1 d-flex">
           <a data-id="${doc.id}" href="#" class="producto-card border  text-decoration-none">
             <div class="card text-dark">
               <img src="${producto.imagen}" class="card-body p-2 w-100 mb-n1 productos-imagen"/>
@@ -34,23 +34,21 @@ window.addEventListener("DOMContentLoaded", async (e) => {
           const doc = await getProducto(e.currentTarget.dataset.id);
           const producto = doc.data();
           localStorage.setItem("producto-id",doc.id);
-          localStorage.setItem("producto-categoria", producto.categoria);
-          localStorage.setItem("producto-coordenadaLatitud", producto.coordenadaLatitud);
-          localStorage.setItem("producto-coordenadaLongitud", producto.coordenadaLongitud);
-          localStorage.setItem("producto-correo", producto.correo);
-          localStorage.setItem("producto-descripcion", producto.descripcion);
-          localStorage.setItem("producto-favorito", producto.favorito);
-          localStorage.setItem("producto-imagen", producto.imagen);
-          localStorage.setItem("producto-nombre", producto.nombre);
-          localStorage.setItem("producto-precio", producto.precio);
-          localStorage.setItem("producto-telefono", producto.telefono);
-          localStorage.setItem("producto-tienda", producto.tienda);
-          localStorage.setItem("producto-ubicacion", producto.ubicacion);
           window.location.href = "vistaDetalleDeProducto.html";
         } catch (error) {
           console.log(error);
         }
       });
+    });
+
+    $("#botonBuscarXSSM").unbind().click(function () {
+      localStorage.setItem('busqueda-solicitada',$('#formularioBuscarXSSM').val());
+      window.location.href = "vistaResultadoBusqueda.html";
+    });
+
+    $("#botonBuscarMDXL").unbind().click(function () {
+      localStorage.setItem('busqueda-solicitada',$('#formularioBuscarMDXL').val());
+      window.location.href = "vistaResultadoBusqueda.html";
     });
 
   });

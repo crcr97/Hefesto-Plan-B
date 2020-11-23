@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="assets/js/HefestoJS/vistaMapaTiendaUnica.js"></script>
         <title>Dashboard - Brand</title>
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -12,7 +14,7 @@
     <body id="page-top" class="bmd-drawer-overlay">
         <div id="wrapper" style="background-color: rgba(0, 0, 0, 0.78);">
             <nav class="accordion align-items-start bg-gradient-primary bmd-drawer-overlay navbar navbar-dark p-0 sidebar sidebar-dark toggled">
-                <div class="container-fluid d-flex flex-column h-100 justify-content-start p-0" style="background-color: #363737;">
+                <div class="container-fluid d-flex flex-column h-100 justify-content-start p-0" style="background-color: #363737;" id="test">
                     <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"> <div class="sidebar-brand-icon">
                             <img src="assets/img/logotipo/logoHEFESTO.png" class="img-fluid logotipoHEFESTOnavBar">
                         </div> <div class="sidebar-brand-text mx-3">
@@ -21,11 +23,10 @@
                     <hr class="sidebar-divider my-0">
                     <ul class="nav navbar-nav text-light" id="accordionSidebar">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html"><i class="fa-home fas"></i><span>Menu
-                                Principal</span></a>
+                            <a class="nav-link active" href="index.html"><i class="fa-home fas"></i><span>Menu Principal</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaFavoritos.html"><i class="fa-heart fas"></i><span>Favoritos</span></a>
+                            <a class="nav-link" href="vistaDonaciones.html"><i class="fa-heart fas"></i><span>Favoritos</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="vistaExhibiciones.html"><i class="fa-laptop fas"></i><span>Laptops</span></a>
@@ -53,33 +54,33 @@
             </nav>
             <div class="d-flex flex-column" id="content-wrapper">
                 <div id="content">
-                    <nav class="mb-4 navbar navbar-expand shadow static-top topbar" style="background-color: rgba(0, 0, 0, 0.78);">
+                    <nav class="navbar navbar-expand  shadow static-top topbar" style="background-color: rgba(0, 0, 0, 0.78);" id="mapaNavBar">
                         <div class="container-fluid">
                             <button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button">
                                 <i class="fas fa-bars"></i>
                             </button>
-                            <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <form class="d-none d-sm-none form-inline ml-md-3 mr-auto mw-100 my-2 my-md-0 navbar-search">
                                 <div class="input-group">
-                                    <input class="bg-light border-0 form-control small" type="text" placeholder="Escribe para buscar" id="formularioBuscarMDXL">
+                                    <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
                                     <div class="input-group-append">
-                                        <button class="btn btn-primary py-0" type="button" id="botonBuscarMDXL">
+                                        <button class="btn btn-primary py-0" type="button">
                                             <i class="fas fa-search"></i>
                                         </button>
                                     </div>
                                 </div>
                             </form>
-                            <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <h6 class="font-weight-bolder mb-n1 text-center text-light">HEFESTO</h6>
+                            <ul class="flex-nowrap ml-auto nav navbar-nav">
+                                <h6 class="font-weight-bolder mb-n1 mr-5 pr-1 text-center text-light">HEFESTO</h6>
                             </ul>
                             <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <li class="nav-item dropdown d-sm-none no-arrow">
+                                <li class="d-none d-sm-none dropdown nav-item no-arrow">
                                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
                                     <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown" style="background-color: rgba(0, 0, 0, 0.78);">
                                         <form class="form-inline mr-auto navbar-search w-100">
                                             <div class="input-group">
-                                                <input class="bg-light form-control border-0 small" type="text" placeholder="Escribe para buscar" id="formularioBuscarXSSM">
+                                                <input class="bg-light form-control border-0 small" type="text" placeholder="Escribe para buscar">
                                                 <div class="input-group-append">
-                                                    <button class="botonBuscar btn btn-primary py-0" type="button" id="botonBuscarXSSM">
+                                                    <button class="btn btn-primary py-0" type="button">
                                                         <i class="fas fa-search"></i>
                                                     </button>
                                                 </div>
@@ -90,26 +91,17 @@
                             </ul>
                         </div>
                     </nav>
-                    <div class="container-fluid p-3">
-                        <div class="mt-n3 row">
+                    <div class="container-fluid contenedorPrincipal p-0">
+                        <div class="row">
                             <div class="col">
-                                <div class="align-content-center align-items-center d-flex justify-content-center">
-                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;" id="titulo-view">Todos los Productos</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="mb-n1 mt-n1"/>
-                        <div class=" row">
-                            <div class="col">
-                                <div class="mt-3 row row-cols-2" id="productos-container"></div>
+                                <div id="mapaContainer"></div>                                                                  
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
         <script>
@@ -128,7 +120,7 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-    </script>
+    </script> -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/chart.min.js"></script>
@@ -136,6 +128,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="assets/js/theme.js"></script>
         <!-- CODIGO PERSONAL -->
-        <script src="assets/js/HefestoJS/indexTodosProductos.js"></script>
     </body>
 </html>

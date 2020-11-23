@@ -62,11 +62,14 @@ hr {
   margin-right: 0;
 }
 
-.bodyMapa{
-  overflow: hidden;
+.contenedorPrincipal {
+  min-height: 100%;
 }
+
+/* body,html {
+  height: 100%;
+} */
 
 #detalleDescripcionProducto {
   text-align: justify;
 }
-
