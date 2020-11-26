@@ -70,6 +70,8 @@ window.addEventListener("DOMContentLoaded", async (e) => {
         $("#botonDetalleMapaTienda").click(function () {
             localStorage.setItem("tienda-coordenadaLatitud", tienda.coordenadaLatidud);
             localStorage.setItem("tienda-coordenadaLongitud", tienda.coordenadaLongitud);
+            localStorage.setItem("tienda-mapa-imagen", tienda.imagen);
+            localStorage.setItem("tienda-mapa-nombre", tienda.nombre);
             window.location.href = "vistaMapaTiendaUnica.html";
         });
 

@@ -78,3 +78,9 @@ hr {
   max-height: 100vh;
   overflow: auto;
 }
+
+#imagenMapa{
+  width: 200px;
+  height: 30vw;
+  object-fit: contain;
+}

@@ -1,5 +1,8 @@
 var productoCoordenadaLatitud = localStorage.getItem('tienda-coordenadaLatitud');
 var productoCoordenadaLongitud = localStorage.getItem('tienda-coordenadaLongitud');
+
+var imagenTienda = String(localStorage.getItem("tienda-mapa-imagen"));
+var nombreTienda = String(localStorage.getItem("tienda-mapa-nombre"));
 // console.log(productoCoordenadaLatitud);
 // console.log(productoCoordenadaLongitud);
 var pantallaAnterior = String(localStorage.getItem('pantalla-anterior'));
@@ -52,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementsByClassName("contenedorPrincipal")[0].style.width = ($('#content').width()) + "px";
     document.getElementsByClassName("contenedorPrincipal")[0].style.height = ($('#page-top').height() - $('#mapaNavBar').height()) + "px";
     document.getElementById("mapaContainer").style.width = $('.contenedorPrincipal').width() + "px";
-    document.getElementById("mapaContainer").style.height = $('.contenedorPrincipal').height() + "px";
+    document.getElementById("mapaContainer").style.height = ($('.contenedorPrincipal').height()-25) + "px";
 });
 
 document.addEventListener("deviceready", function () {
@@ -77,6 +80,9 @@ document.addEventListener("deviceready", function () {
 function onMapInit(map) {
     var htmlInfoWindow = new plugin.google.maps.HtmlInfoWindow();
 
+    var html = "<img id='imagenMapa' class='pl-2 d-flex justify-content-center img-responsive' src='"+imagenTienda+"' width='200px' height='100px' >" 
+                +"<p class='pr-3 text-center'>"+nombreTienda+"</p>";
+    htmlInfoWindow.setContent(html);
     // var html = [
     //     'This is <b>Html</b> InfoWindow',
     //     '<br>',
@@ -84,12 +90,13 @@ function onMapInit(map) {
     // ].join("");
     // htmlInfoWindow.setContent(html);
 
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("width", "200");
-    iframe.setAttribute("height", "100");
-    iframe.setAttribute("src", "https://www.youtube.com/embed/g8jTeS_Ey4A");
-    iframe.setAttribute("frameboarder", "0");
-    htmlInfoWindow.setContent(iframe);
+    // var iframe = document.createElement("iframe");
+    // iframe.setAttribute("width", "200");
+    // iframe.setAttribute("height", "100");
+    // iframe.setAttribute("src", imagenTienda);
+    // iframe.addClass()
+    // iframe.setAttribute("frameboarder", "0");
+    // htmlInfoWindow.setContent(iframe);
 
     // Add a marker
     map.addMarker({
