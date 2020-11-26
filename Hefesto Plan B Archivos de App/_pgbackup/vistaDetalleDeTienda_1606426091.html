@@ -13,7 +13,7 @@
         <div id="wrapper" style="background-color: rgba(0, 0, 0, 0.78);">
             <nav class="accordion align-items-start bg-gradient-primary bmd-drawer-overlay navbar navbar-dark p-0 sidebar sidebar-dark toggled">
                 <div class="container-fluid d-flex flex-column h-100 justify-content-start p-0" style="background-color: #363737;">
-                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"> <div class="sidebar-brand-icon">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="vistaTiendas.html"> <div class="sidebar-brand-icon">
                             <img src="assets/img/logotipo/logoHEFESTO.png" class="img-fluid logotipoHEFESTOnavBar">
                         </div> <div class="sidebar-brand-text mx-3">
                             <span>HEFESTO</span>
@@ -21,29 +21,32 @@
                     <hr class="sidebar-divider my-0">
                     <ul class="nav navbar-nav text-light" id="accordionSidebar">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html"><i class="fa-home fas"></i><span>Menu
-                                Principal</span></a>
+                            <a class="nav-link pb-2 pt-2" href="index.html" id="navMenuPrincipal"><i class="fa-home fas"></i><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaFavoritos.html"><i class="fa-heart fas"></i><span>Favoritos</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaFavoritos.html" id="navFavoritos"><i class="fa-heart fas"></i><span>Favoritos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaExhibiciones.html"><i class="fa-laptop fas"></i><span>Laptops</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaEventos.html"><i class="fa-desktop fas"></i><span>Desktops</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaDesktops.html" id="navDesktops"><i class="fa-desktop fas"></i><span>Desktops</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaRecomendacionesCovid.html"><i class="fa-headset fas"></i><span>Componentes</span></a>
+                            <a class="nav-link  pb-2 pt-2" id="navPerifericos" href="vistaPerifericos.html"><i class="fa-headset fas"></i><span>Perifericos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaInformacionDeContacto.html"><i class="fa-print fas"></i><span>Oficina</span></a>
+                            <a class="nav-link  pb-2 pt-2" id="navComponentes" href="vistaComponentes.html"><i class="fa-memory fas"></i><span>Componentes</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaSugerenciasOComentarios.html"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaDonaciones.html"><i class="fa-mob fa-mobile-alt fas"></i><span>Celulares</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaTablets.html" id="navTablets"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaCelulares.html" id="navCelulares"><i class="fa-mob fa-mobile-alt fas"></i><span>Celulares</span></a>
                         </li>
                     </ul>
                     <div class="text-center d-none d-md-inline">
@@ -94,7 +97,7 @@
                         <div class="mt-n3 row">
                             <div class="col">
                                 <div class="align-content-center align-items-center d-flex justify-content-center">
-                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;">Detalle de Producto</h3>
+                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;">Detalle de Tienda</h3>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +106,7 @@
                             <div class="align-content-center align-items-center col col-md-6 d-flex flex-column justify-content-center mb-3 ">
                                 <div class="align-content-center align-items-center justify-content-center  row">
                                     <div class="align-content-center align-items-center col col-md-11 d-flex flex-column justify-content-center">
-                                        <img id="detalleImagenProducto" class="img-fluid img-responsive">
+                                        <img id="detalleImagenTienda" class="img-fluid img-responsive">
                                     </div>
                                 </div>
                             </div>
@@ -111,24 +114,19 @@
                                 <div class="align-content-center align-items-center col d-flex flex-column justify-content-center  pl-0 pr-0">
                                     <div class="col-12 d-flex flex-column">
                                         <div class="align-content-center align-items-center justify-content-center row">
-                                            <div class="align-content-center align-items-start col-6 d-flex flex-column justify-content-center ">
-                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" id="detallePrecioProducto" style="color: #000000;">&nbsp;</h5>
-                                            </div>
-                                            <div class="align-content-center align-items-end col-6 d-flex flex-column justify-content-center ">
-                                                <button type="button" class="btn" id="detalleProductoFavorito">
-                                                    <i class="fa-heart fa-lg far fas" id="iconoFavoritos"></i>
-                                                </button>
+                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center">
+                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" id="detalleNombreTienda" style="color: #000000;">&nbsp;</h5>
                                             </div>
                                         </div>
-                                        <div class="align-content-center align-items-center justify-content-center row">
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleNombreProducto" class="font-weight-bold productos-detalle-textos"></p>
-                                            </div>
-                                        </div>
-                                        <div class="align-content-center align-items-center justify-content-center row">
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-row justify-content-start">
+                                        <div class="align-content-center align-items-center justify-content-center mb-1 mb-md-1  row">
+                                            <div class="align-content-center align-items-start col-6 d-flex flex-row justify-content-start mt-4">
                                                 <i class='fas fa-map-marker-alt'></i>
-                                                <p id="detalleUbicacionProducto" class="font-weight-bold ml-1 mt-n1 productos-detalle-textos"></p>
+                                                <p id="detalleUbicacionTienda" class="font-weight-bold ml-1 mt-n1 productos-detalle-textos"></p>
+                                            </div>
+                                            <div class="align-content-center align-items-center col-6 d-flex flex-row justify-content-end justify-content-md-end">
+                                                <button class="btn btn-danger " id="botonDetalleProductosTienda" type="button">
+                                                    <i class='fa-box-open fa-pull-right fas mt-1'></i>Productos
+                                                </button>
                                             </div>
                                         </div>
                                         <hr class="mt-1"/>
@@ -137,36 +135,24 @@
                                                 <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" style="color: #000000;">Descripcion</h5>
                                             </div>
                                             <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleDescripcionProducto" class="font-weight-bold productos-detalle-textos"></p>
-                                            </div>
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleCategoriaProducto" class="font-weight-bold productos-detalle-textos"></p>
+                                                <p id="detalleDescripcionTienda" class="font-weight-bold productos-detalle-textos"></p>
                                             </div>
                                         </div>
                                         <hr class="mt-1"/>
                                         <div class="align-content-center align-items-center justify-content-center mt-2 row">
                                             <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" style="color: #000000;">Tienda</h5>
+                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" style="color: #000000;">Informacion de Contacto</h5>
                                             </div>
                                             <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleTiendaProducto" class="font-weight-bold productos-detalle-textos"></p>
+                                                <p id="detalleTelefonoTienda" class="font-weight-bold productos-detalle-textos"></p>
                                             </div>
                                             <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleTelefonoProducto" class="font-weight-bold productos-detalle-textos"></p>
-                                            </div>
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleCorreoProducto" class="font-weight-bold productos-detalle-textos"></p>
+                                                <p id="detalleCorreoTienda" class="font-weight-bold productos-detalle-textos"></p>
                                             </div>
                                             <div class="col-12 flex-row">
-                                                <div class="align-content-around align-items-center align-items-md-start d-flex flex-row justify-content-around justify-content-md-start ml-md-0 mr-md-0 row">
-                                                    <button type="button" class="align-self-start btn btn-primary mr-1 mt-1" id="detalleTelefonoProducto">
-                                                        <i class="fa-phone fa-pull-right fas pt-1"></i>Llamar
-                                                    </button>
-                                                    <button class="btn btn-success mr-1 mt-1" id="detalleMapaProducto" type="button">
+                                                <div class="align-content-around align-items-center align-items-md-start d-flex flex-row justify-content-center justify-content-md-center ml-md-0 mr-md-0 row">
+                                                    <button class="btn btn-block btn-success d-flex flex-row-reverse justify-content-center ml-5 mr-5 mt-1" id="botonDetalleMapaTienda" type="button">
                                                         <i class='fa-map-marker-alt fa-pull-right fas mt-1'></i>Mapa
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary mt-1" id="detalleEmailProducto">
-                                                        <i class='fa-envelope fa-pull-right fas mt-1'></i>Email
                                                     </button>
                                                 </div>
                                             </div>
@@ -210,6 +196,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="assets/js/theme.js"></script>
         <!-- CODIGO PERSONAL -->
-        <script src="assets/js/HefestoJS/vistaDetalleDeProducto.js"></script>
+        <script src="assets/js/HefestoJS/vistaDetalleDeTienda.js"></script>
     </body>
 </html>

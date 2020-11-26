@@ -13,7 +13,7 @@
         <div id="wrapper" style="background-color: rgba(0, 0, 0, 0.78);">
             <nav class="accordion align-items-start bg-gradient-primary bmd-drawer-overlay navbar navbar-dark p-0 sidebar sidebar-dark toggled">
                 <div class="container-fluid d-flex flex-column h-100 justify-content-start p-0" style="background-color: #363737;">
-                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="vistaTiendas.html"> <div class="sidebar-brand-icon">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.html"> <div class="sidebar-brand-icon">
                             <img src="assets/img/logotipo/logoHEFESTO.png" class="img-fluid logotipoHEFESTOnavBar">
                         </div> <div class="sidebar-brand-text mx-3">
                             <span>HEFESTO</span>
@@ -21,14 +21,14 @@
                     <hr class="sidebar-divider my-0">
                     <ul class="nav navbar-nav text-light" id="accordionSidebar">
                         <li class="nav-item">
-                            <a class="nav-link pb-2 pt-2" href="index.html" id="navMenuPrincipal"><i class="fa-home fas"></i><span>Inicio</span></a>
+                            <a class="active nav-link pb-2 pt-2" href="index.html" id="navMenuPrincipal"><i class="fa-home fas"></i><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
                             <a class="nav-link  pb-2 pt-2" href="vistaFavoritos.html" id="navFavoritos"><i class="fa-heart fas"></i><span>Favoritos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  pb-2 pt-2" href="vistaDesktops.html" id="navDesktops"><i class="fa-desktop fas"></i><span>Desktops</span></a>
@@ -40,7 +40,7 @@
                             <a class="nav-link  pb-2 pt-2" id="navComponentes" href="vistaComponentes.html"><i class="fa-memory fas"></i><span>Componentes</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="active nav-link pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  pb-2 pt-2" href="vistaTablets.html" id="navTablets"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
@@ -61,28 +61,28 @@
                             <button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button">
                                 <i class="fas fa-bars"></i>
                             </button>
-                            <form class="d-none d-sm-none form-inline ml-md-3 mr-auto mw-100 my-2 my-md-0 navbar-search">
+                            <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                 <div class="input-group">
-                                    <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                    <input class="bg-light border-0 form-control small" type="text" placeholder="Escribe para buscar" id="formularioBuscarMDXL">
                                     <div class="input-group-append">
-                                        <button class="btn btn-primary py-0" type="button">
+                                        <button class="btn btn-primary py-0" type="button" id="botonBuscarMDXL">
                                             <i class="fas fa-search"></i>
                                         </button>
                                     </div>
                                 </div>
                             </form>
-                            <ul class="flex-nowrap ml-auto nav navbar-nav">
-                                <h6 class="font-weight-bolder mb-n1 mr-5 pr-1 text-center text-light">HEFESTO</h6>
+                            <ul class="nav navbar-nav flex-nowrap ml-auto">
+                                <h6 class="font-weight-bolder mb-n1 text-center text-light">HEFESTO</h6>
                             </ul>
                             <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <li class="d-none d-sm-none dropdown nav-item no-arrow">
+                                <li class="nav-item dropdown d-sm-none no-arrow">
                                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
                                     <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown" style="background-color: rgba(0, 0, 0, 0.78);">
                                         <form class="form-inline mr-auto navbar-search w-100">
                                             <div class="input-group">
-                                                <input class="bg-light form-control border-0 small" type="text" placeholder="Escribe para buscar">
+                                                <input class="bg-light form-control border-0 small" type="text" placeholder="Escribe para buscar" id="formularioBuscarXSSM">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-primary py-0" type="button">
+                                                    <button class="botonBuscar btn btn-primary py-0" type="button" id="botonBuscarXSSM">
                                                         <i class="fas fa-search"></i>
                                                     </button>
                                                 </div>
@@ -97,39 +97,14 @@
                         <div class="mt-n3 row">
                             <div class="col">
                                 <div class="align-content-center align-items-center d-flex justify-content-center">
-                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;" id="titulo-view">Oficina</h3>
+                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;" id="titulo-view">Todos los Productos</h3>
                                 </div>
                             </div>
                         </div>
                         <hr class="mb-n1 mt-n1"/>
                         <div class=" row">
                             <div class="col">
-                                <div class="mt-3 row row-cols-3 row-cols-sm-3" id="oficinas-container">
-                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
-                                        <a data-id="Bolsones" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
-                                                <img src="https://cdn1.coppel.com/images/catalog/pm/1491013-1.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
-                                                <div class="card-body px-2 pt-0"> 
-                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Bolsones</h5> 
-                                                </div>                                                 
-                                            </div> </a> 
-                                    </div>
-                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
-                                        <a data-id="Impresor" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
-                                                <img src="https://ar-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/4/S/4SB24A-1_T1601585157.png" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
-                                                <div class="card-body px-2 pt-0"> 
-                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Impresores</h5> 
-                                                </div>                                                 
-                                            </div> </a> 
-                                    </div>
-                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
-                                        <a data-id="Escritorio" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
-                                                <img src="https://www.elcontainer.cl/3512-thickbox_default/escritorio-con-cubierta-madera.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
-                                                <div class="card-body px-2 pt-0"> 
-                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Escritorios</h5> 
-                                                </div>                                                 
-                                            </div> </a> 
-                                    </div>
-                                </div>
+                                <div class="mt-3 row row-cols-2" id="productos-container"></div>
                             </div>
                         </div>
                     </div>
@@ -164,6 +139,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="assets/js/theme.js"></script>
         <!-- CODIGO PERSONAL -->
-        <script src="assets/js/HefestoJS/vistaOficina.js"></script>
+        <script src="assets/js/HefestoJS/indexTodosProductos.js"></script>
     </body>
 </html>

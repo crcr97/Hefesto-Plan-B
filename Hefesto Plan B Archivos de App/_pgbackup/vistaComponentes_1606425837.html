@@ -24,11 +24,11 @@
                             <a class="nav-link pb-2 pt-2" href="index.html" id="navMenuPrincipal"><i class="fa-home fas"></i><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
+                            <a class="nav-link pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
                             <a class="nav-link  pb-2 pt-2" href="vistaFavoritos.html" id="navFavoritos"><i class="fa-heart fas"></i><span>Favoritos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
+                            <a class="nav-link pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  pb-2 pt-2" href="vistaDesktops.html" id="navDesktops"><i class="fa-desktop fas"></i><span>Desktops</span></a>
@@ -37,10 +37,10 @@
                             <a class="nav-link  pb-2 pt-2" id="navPerifericos" href="vistaPerifericos.html"><i class="fa-headset fas"></i><span>Perifericos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  pb-2 pt-2" id="navComponentes" href="vistaComponentes.html"><i class="fa-memory fas"></i><span>Componentes</span></a>
+                            <a class="active nav-link pb-2 pt-2" id="navComponentes" href="vistaComponentes.html"><i class="fa-memory fas"></i><span>Componentes</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
+                            <a class="nav-link pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  pb-2 pt-2" href="vistaTablets.html" id="navTablets"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
@@ -97,80 +97,77 @@
                         <div class="mt-n3 row">
                             <div class="col">
                                 <div class="align-content-center align-items-center d-flex justify-content-center">
-                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;">Detalle de Tienda</h3>
+                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;" id="titulo-view">Componentes</h3>
                                 </div>
                             </div>
                         </div>
                         <hr class="mb-n1 mt-n1"/>
-                        <div class="mt-4 row" id="detallesContainer">
-                            <div class="align-content-center align-items-center col col-md-6 d-flex flex-column justify-content-center mb-3 ">
-                                <div class="align-content-center align-items-center justify-content-center  row">
-                                    <div class="align-content-center align-items-center col col-md-11 d-flex flex-column justify-content-center">
-                                        <img id="detalleImagenTienda" class="img-fluid img-responsive">
+                        <div class=" row">
+                            <div class="col">
+                                <div class="mt-3 row row-cols-3 row-cols-sm-3" id="oficinas-container">
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="CPU" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://i.blogs.es/fbec61/intel-core-i9-laptop-gaming/450_1000.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Procesadores</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
                                     </div>
-                                </div>
-                            </div>
-                            <div class="align-content-start align-items-start col col-md-6 d-flex flex-column flex-fill flex-md-column flex-sm-column mb-3 pl-0 pr-0">
-                                <div class="align-content-center align-items-center col d-flex flex-column justify-content-center  pl-0 pr-0">
-                                    <div class="col-12 d-flex flex-column">
-                                        <div class="align-content-center align-items-center justify-content-center row">
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center">
-                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" id="detalleNombreTienda" style="color: #000000;">&nbsp;</h5>
-                                            </div>
-                                        </div>
-                                        <div class="align-content-center align-items-center justify-content-center row">
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleNombreTienda" class="font-weight-bold productos-detalle-textos"></p>
-                                            </div>
-                                        </div>
-                                        <div class="align-content-center align-items-center justify-content-center mb-1 mb-md-1 row">
-                                            <div class="align-content-center align-items-start col-6 d-flex flex-row justify-content-start">
-                                                <i class='fas fa-map-marker-alt'></i>
-                                                <p id="detalleUbicacionTienda" class="font-weight-bold ml-1 mt-n1 productos-detalle-textos"></p>
-                                            </div>
-                                            <div class="align-content-center align-items-center col-6 d-flex flex-row justify-content-center justify-content-md-end">
-                                                <button class="btn btn-danger mr-md-3 mt-1 mt-md-1" id="detalleProductosTienda" type="button">
-                                                    <i class='fa-box-open fa-pull-right fas mt-1'></i>Productos
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <hr class="mt-1"/>
-                                        <div class="align-content-center align-items-center justify-content-center mt-2 row">
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" style="color: #000000;">Descripcion</h5>
-                                            </div>
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleDescripcionTienda" class="font-weight-bold productos-detalle-textos"></p>
-                                            </div>
-                                        </div>
-                                        <hr class="mt-1"/>
-                                        <div class="align-content-center align-items-center justify-content-center mt-2 row">
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <h5 class="align-middle align-self-start d-inline-block font-weight-bolder ml-0 productos-detalle-textos" style="color: #000000;">Informacion de Contacto</h5>
-                                            </div>
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleTelefonoTienda" class="font-weight-bold productos-detalle-textos"></p>
-                                            </div>
-                                            <div class="align-content-center align-items-start col-12 d-flex flex-column justify-content-center ">
-                                                <p id="detalleCorreoTienda" class="font-weight-bold productos-detalle-textos"></p>
-                                            </div>
-                                            <div class="col-12 flex-row">
-                                                <div class="align-content-around align-items-center align-items-md-start d-flex flex-row justify-content-around justify-content-md-around ml-md-0 mr-md-0 row">
-                                                    <button type="button" class="align-self-start btn btn-primary mr-1 mt-1" id="detalleTelefonoTienda">
-                                                        <i class="fa-phone fa-pull-right fas pt-1"></i>Llamar
-                                                    </button>
-                                                    <button class="btn btn-success mr-1 mt-1" id="detalleMapaTienda" type="button">
-                                                        <i class='fa-map-marker-alt fa-pull-right fas mt-1'></i>Mapa
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary mt-1" id="detalleEmailTienda">
-                                                        <i class='fa-envelope fa-pull-right fas mt-1'></i>Email
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="align-content-center col-12 d-md-none flex-row mt-5 ">
-                                                <div class="pg-empty-placeholder row"></div>
-                                            </div>
-                                        </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="Case" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://yosoycomputacion.com/wp-content/uploads/2019/01/el-chasis-o-gabinete.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Case (gabinetes)</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="Cooler Laptop" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://m.media-amazon.com/images/I/617RwsH3JwL._AC_SS350_.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Cooler de laptop</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="Cooler de Aire" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://gamerpc.es/wp-content/uploads/2018/06/mejores-disipadores-para-pc.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Cooler de aire</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="Cooler de liquido" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://images-na.ssl-images-amazon.com/images/I/81uZ9vB1bJL._AC_SX466_.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Cooler de liquido</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="Disco Duro" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://i.blogs.es/7ebda1/samsung-spinpoint-mt2-1tb/450_1000.jpg" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Disco Duro</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="Fuente de poder" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://sites.google.com/site/hardware012015/_/rsrc/1472844594552/partes-internas-del-pc/fuente-de-poder/fuente.png" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Fuente de poder</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-3 px-1 py-1 d-flex"> 
+                                        <a data-id="Memoria RAM" href="#" class="oficina-card rounded text-decoration-none"> <div class="card text-dark"> 
+                                                <img src="https://www.aeon.com.sv/web/image/product.template/6093/image_1024?unique=157d27c" class="card-body p-2 w-100 mb-n1 productos-imagen"/> 
+                                                <div class="card-body px-2 pt-0"> 
+                                                    <h5 class="card-title font-weight-bolder productos-info  mb-0 text-center" id="productName">Memoria RAM</h5> 
+                                                </div>                                                 
+                                            </div> </a> 
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +196,7 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-        </script>         
+    </script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/chart.min.js"></script>
@@ -207,6 +204,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="assets/js/theme.js"></script>
         <!-- CODIGO PERSONAL -->
-        <script src="assets/js/HefestoJS/vistaDetalleDeTienda.js"></script>
+        <script src="assets/js/HefestoJS/vistaComponentes.js"></script>
     </body>
 </html>
