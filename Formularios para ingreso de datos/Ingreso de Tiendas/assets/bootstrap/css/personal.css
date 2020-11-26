@@ -1,0 +1,21 @@
+@media (min-width: 480px) {
+    .menuPrincipal {
+        flex: 1 0 40%;
+    }
+
+.card{
+    border: 2px solid black;
+}
+
+
+@media (min-width: 768px) {
+    /* .menuPrincipal{
+        flex: 1 0 25%;
+    } */
+    .menuPrincipal {
+        flex: 1 0 40%;
+    }
+}
+}
+
+

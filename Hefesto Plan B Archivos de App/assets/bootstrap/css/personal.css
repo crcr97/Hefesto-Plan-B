@@ -70,3 +70,11 @@ hr {
   text-align: justify;
 }
 
+#detalleDescripcionTienda {
+  text-align: justify;
+}
+
+#accordionSidebar{
+  max-height: 100vh;
+  overflow: auto;
+}

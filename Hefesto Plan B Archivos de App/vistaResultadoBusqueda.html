@@ -14,7 +14,7 @@
         <div id="wrapper" style="background-color: rgba(0, 0, 0, 0.78);">
             <nav class="accordion align-items-start bg-gradient-primary bmd-drawer-overlay navbar navbar-dark p-0 sidebar sidebar-dark toggled">
                 <div class="container-fluid d-flex flex-column h-100 justify-content-start p-0" style="background-color: #363737;">
-                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"> <div class="sidebar-brand-icon">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.html"> <div class="sidebar-brand-icon">
                             <img src="assets/img/logotipo/logoHEFESTO.png" class="img-fluid logotipoHEFESTOnavBar">
                         </div> <div class="sidebar-brand-text mx-3">
                             <span>HEFESTO</span>
@@ -22,29 +22,32 @@
                     <hr class="sidebar-divider my-0">
                     <ul class="nav navbar-nav text-light" id="accordionSidebar">
                         <li class="nav-item">
-                            <a class="active nav-link" href="index.html"><i class="fa-home fas"></i><span>Menu
-                                Principal</span></a>
+                            <a class="nav-link pb-2 pt-2" href="index.html" id="navMenuPrincipal"><i class="fa-home fas"></i><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fa-heart fas"></i><span>Favoritos</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaFavoritos.html" id="navFavoritos"><i class="fa-heart fas"></i><span>Favoritos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaExhibiciones.html"><i class="fa-laptop fas"></i><span>Laptops</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaEventos.html"><i class="fa-desktop fas"></i><span>Desktops</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaDesktops.html" id="navDesktops"><i class="fa-desktop fas"></i><span>Desktops</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaRecomendacionesCovid.html"><i class="fa-headset fas"></i><span>Componentes</span></a>
+                            <a class="nav-link  pb-2 pt-2" id="navPerifericos" href="vistaPerifericos.html"><i class="fa-headset fas"></i><span>Perifericos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaInformacionDeContacto.html"><i class="fa-print fas"></i><span>Oficina</span></a>
+                            <a class="nav-link  pb-2 pt-2" id="navComponentes" href="vistaComponentes.html"><i class="fa-memory fas"></i><span>Componentes</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaSugerenciasOComentarios.html"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaDonaciones.html"><i class="fa-mob fa-mobile-alt fas"></i><span>Celulares</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaTablets.html" id="navTablets"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaCelulares.html" id="navCelulares"><i class="fa-mob fa-mobile-alt fas"></i><span>Celulares</span></a>
                         </li>
                     </ul>
                     <div class="text-center d-none d-md-inline">
@@ -54,26 +57,26 @@
             </nav>
             <div class="d-flex flex-column" id="content-wrapper">
                 <div id="content">
-                    <nav class="mb-4 navbar navbar-expand shadow static-top topbar" style="background-color: rgba(0, 0, 0, 0.78);">
+                    <nav class="mb-4 navbar navbar-expand shadow static-top topbar" style="background-color: rgba(0, 0, 0, 0.78);" id="mapaNavBar">
                         <div class="container-fluid">
                             <button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button">
                                 <i class="fas fa-bars"></i>
                             </button>
-                            <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <form class="d-none d-sm-none form-inline ml-md-3 mr-auto mw-100 my-2 my-md-0 navbar-search">
                                 <div class="input-group">
                                     <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
                                     <div class="input-group-append">
-                                        <button class="btn btn-primary py-0" type="button" id="botonBuscar">
+                                        <button class="btn btn-primary py-0" type="button">
                                             <i class="fas fa-search"></i>
                                         </button>
                                     </div>
                                 </div>
                             </form>
-                            <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <h6 class="font-weight-bolder mb-n1 text-center text-light">HEFESTO</h6>
+                            <ul class="flex-nowrap ml-auto nav navbar-nav">
+                                <h6 class="font-weight-bolder mb-n1 mr-5 pr-1 text-center text-light">HEFESTO</h6>
                             </ul>
                             <ul class="nav navbar-nav flex-nowrap ml-auto">
-                                <li class="nav-item dropdown d-sm-none no-arrow">
+                                <li class="d-none d-sm-none dropdown nav-item no-arrow">
                                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
                                     <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown" style="background-color: rgba(0, 0, 0, 0.78);">
                                         <form class="form-inline mr-auto navbar-search w-100">

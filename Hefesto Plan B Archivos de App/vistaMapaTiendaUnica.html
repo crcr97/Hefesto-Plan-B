@@ -15,7 +15,7 @@
         <div id="wrapper" style="background-color: rgba(0, 0, 0, 0.78);">
             <nav class="accordion align-items-start bg-gradient-primary bmd-drawer-overlay navbar navbar-dark p-0 sidebar sidebar-dark toggled">
                 <div class="container-fluid d-flex flex-column h-100 justify-content-start p-0" style="background-color: #363737;">
-                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"> <div class="sidebar-brand-icon">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.html"> <div class="sidebar-brand-icon">
                             <img src="assets/img/logotipo/logoHEFESTO.png" class="img-fluid logotipoHEFESTOnavBar">
                         </div> <div class="sidebar-brand-text mx-3">
                             <span>HEFESTO</span>
@@ -23,28 +23,32 @@
                     <hr class="sidebar-divider my-0">
                     <ul class="nav navbar-nav text-light" id="accordionSidebar">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html"><i class="fa-home fas"></i><span>Menu Principal</span></a>
+                            <a class="nav-link pb-2 pt-2" href="index.html" id="navMenuPrincipal"><i class="fa-home fas"></i><span>Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaFavoritos.html"><i class="fa-heart fas"></i><span>Favoritos</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaFavoritos.html" id="navFavoritos"><i class="fa-heart fas"></i><span>Favoritos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaExhibiciones.html"><i class="fa-laptop fas"></i><span>Laptops</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaEventos.html"><i class="fa-desktop fas"></i><span>Desktops</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaDesktops.html" id="navDesktops"><i class="fa-desktop fas"></i><span>Desktops</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaRecomendacionesCovid.html"><i class="fa-headset fas"></i><span>Componentes</span></a>
+                            <a class="nav-link  pb-2 pt-2" id="navPerifericos" href="vistaPerifericos.html"><i class="fa-headset fas"></i><span>Perifericos</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaInformacionDeContacto.html"><i class="fa-print fas"></i><span>Oficina</span></a>
+                            <a class="nav-link  pb-2 pt-2" id="navComponentes" href="vistaComponentes.html"><i class="fa-memory fas"></i><span>Componentes</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaSugerenciasOComentarios.html"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vistaDonaciones.html"><i class="fa-mob fa-mobile-alt fas"></i><span>Celulares</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaTablets.html" id="navTablets"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaCelulares.html" id="navCelulares"><i class="fa-mob fa-mobile-alt fas"></i><span>Celulares</span></a>
                         </li>
                     </ul>
                     <div class="text-center d-none d-md-inline">
@@ -94,7 +98,7 @@
                     <div class="container-fluid contenedorPrincipal p-0">
                         <div class="row">
                             <div class="col">
-                                <div id="mapaContainer" class="pb-1"></div>                                 
+                                <div id="mapaContainer" class=""></div>                                 
                             </div>
                         </div>
                     </div>

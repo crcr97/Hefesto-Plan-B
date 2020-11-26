@@ -1,6 +1,6 @@
 var productoTienda = localStorage.getItem('producto-tienda');
-var productoCoordenadaLatitud = localStorage.getItem('producto-coordenadaLatitud');
-var productoCoordenadaLongitud = localStorage.getItem('producto-coordenadaLongitud');
+var productoCoordenadaLatitud = localStorage.getItem('tienda-coordenadaLatitud');
+var productoCoordenadaLongitud = localStorage.getItem('tienda-coordenadaLongitud');
 
 const coordenadas = { "lat": Number(productoCoordenadaLatitud), "lng": Number(productoCoordenadaLongitud) };
 

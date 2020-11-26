@@ -1,15 +1,73 @@
 const db = firebase.firestore();
 const productosBusquedaContainer = document.getElementById("busqueda-container");
 var busquedaSolicitada = String(localStorage.getItem('busqueda-solicitada'));
+var pantallaAnterior = String(localStorage.getItem('pantalla-anterior'));
+
 console.log(busquedaSolicitada);
 
 const getProducto = (id) => db.collection("Productos").doc(id).get();
 
 window.addEventListener("DOMContentLoaded", async (e) => {
 
+  var consulta;
+
+  switch (pantallaAnterior) {
+      case 'inicio':
+          $('#navMenuPrincipal').addClass("active");
+          $("#titulo-view").html("Busqueda en todos los productos");
+          consulta = db.collection("Productos");
+          break;
+
+      case 'tiendas':
+          $('#navTiendas').addClass("active");
+          break;
+
+      case 'favoritos':
+          $('#navFavoritos').addClass("active");
+          $("#titulo-view").html("Busqueda en favoritos");
+          consulta = db.collection("Productos").where('favorito','==','true');
+          break;
+
+      case 'laptops':
+          $('#navLaptops').addClass("active");
+          $("#titulo-view").html("Busqueda en laptops");
+          consulta = db.collection("Productos").where('categoria','==','Laptop');
+          break;
+
+      case 'desktops':
+          $('#navDesktops').addClass("active");
+          $("#titulo-view").html("Busqueda en desktops");
+          consulta = db.collection("Productos").where('categoria','==','PC Escritorio');
+          break;
+
+      case 'perifericos':
+          $('#navPerifericos').addClass("active");
+          break;
+
+      case 'componentes':
+          $('#navComponentes').addClass("active");
+          break;
+
+      case 'oficina':
+          $('#navOficina').addClass("active");
+          break;
+
+      case 'tablets':
+          $('#navTablets').addClass("active");
+          $("#titulo-view").html("Busqueda en tablets");
+          consulta = db.collection("Productos").where('categoria','==','Tablet');
+          break;
+
+      case 'celulares':
+          $('#navCelulares').addClass("active");          
+          $("#titulo-view").html("Busqueda en celulares");
+          consulta = db.collection("Productos").where('categoria','==','Celular');          
+          break;
+  }
+
     const markers = [];
 
-    db.collection("Productos").get().then(function(querySnapshot) {
+    consulta.get().then(function(querySnapshot) {
         productosBusquedaContainer.innerHTML = "";
         querySnapshot.forEach(function(doc) {
             var id = String(doc.id);
@@ -31,7 +89,8 @@ window.addEventListener("DOMContentLoaded", async (e) => {
            // ignoreLocation: false,
            // ignoreFieldNorm: false,
            keys: [
-             "nombre"
+             "nombre",
+             "descripcion"
            ]
          };
          
@@ -46,7 +105,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
              console.log(producto);
             productosBusquedaContainer.innerHTML +=
               `<div class="col-xs-6 col-sm-6 col-md-3 px-1 py-1 d-flex">
-                <a data-id="${producto.id}" href="#" class="producto-card border  text-decoration-none">
+                <a data-id="${producto.id}" href="#" class="producto-card rounded  text-decoration-none">
                   <div class="card text-dark">
                     <img src="${producto.imagen}" class="card-body p-2 w-100 mb-n1 productos-imagen"/>
                     <div class="card-body px-2 pt-0">
