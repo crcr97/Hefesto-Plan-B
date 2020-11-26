@@ -67,15 +67,13 @@ window.addEventListener("DOMContentLoaded", async (e) => {
         detalleCorreoProducto.innerHTML = "Email: " + tienda.correo;
 
 
-        $("#botonDetalleMapaProducto").click(function () {
-            localStorage.setItem("tienda-coordenadaLatitud", tienda.coordenadaLatitud);
+        $("#botonDetalleMapaTienda").click(function () {
+            localStorage.setItem("tienda-coordenadaLatitud", tienda.coordenadaLatidud);
             localStorage.setItem("tienda-coordenadaLongitud", tienda.coordenadaLongitud);
             window.location.href = "vistaMapaTiendaUnica.html";
         });
 
         $("#botonDetalleProductosTienda").click(function () {
-            localStorage.setItem("tienda-coordenadaLatitud", tienda.coordenadaLatitud);
-            localStorage.setItem("tienda-coordenadaLongitud", tienda.coordenadaLongitud);
             localStorage.setItem("tienda-nombre", tienda.nombre);
             window.location.href = "vistaProductosTiendaSeleccionada.html";
         });

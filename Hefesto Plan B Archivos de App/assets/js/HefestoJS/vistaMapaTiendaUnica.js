@@ -1,10 +1,54 @@
-var productoTienda = localStorage.getItem('producto-tienda');
 var productoCoordenadaLatitud = localStorage.getItem('tienda-coordenadaLatitud');
 var productoCoordenadaLongitud = localStorage.getItem('tienda-coordenadaLongitud');
+// console.log(productoCoordenadaLatitud);
+// console.log(productoCoordenadaLongitud);
+var pantallaAnterior = String(localStorage.getItem('pantalla-anterior'));
 
 const coordenadas = { "lat": Number(productoCoordenadaLatitud), "lng": Number(productoCoordenadaLongitud) };
 
 document.addEventListener("DOMContentLoaded", function (event) {
+    switch (pantallaAnterior) {
+        case 'inicio':
+            $('#navMenuPrincipal').addClass("active");
+            break;
+
+        case 'tiendas':
+            $('#navTiendas').addClass("active");
+            break;
+
+        case 'favoritos':
+            $('#navFavoritos').addClass("active");
+            break;
+
+        case 'laptops':
+            $('#navLaptops').addClass("active");
+            break;
+
+        case 'desktops':
+            $('#navDesktops').addClass("active");
+            break;
+
+        case 'perifericos':
+            $('#navPerifericos').addClass("active");
+            break;
+
+        case 'componentes':
+            $('#navComponentes').addClass("active");
+            break;
+
+        case 'oficina':
+            $('#navOficina').addClass("active");
+            break;
+
+        case 'tablets':
+            $('#navTablets').addClass("active");
+            break;
+
+        case 'celulares':
+            $('#navCelulares').addClass("active");
+            break;
+    }
+
     document.getElementsByClassName("contenedorPrincipal")[0].style.width = ($('#content').width()) + "px";
     document.getElementsByClassName("contenedorPrincipal")[0].style.height = ($('#page-top').height() - $('#mapaNavBar').height()) + "px";
     document.getElementById("mapaContainer").style.width = $('.contenedorPrincipal').width() + "px";
