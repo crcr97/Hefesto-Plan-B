@@ -1,0 +1,40 @@
+<select class="form-control" value="Seleccione una opcion" id="productos-categoria">
+    <option hidden disabled selected>Selecciona una opción</option>
+    <option value="Adaptador">Adaptador</option> 			YA
+    <option value="Audifonos">Audifonos</option> 			YA
+    <option value="Bocinas">Bocinas</option>				YA
+    <option value="Bolsones">Bolsones</option>				YA
+    <option value="CPU">CPU</option>					YA
+    <option value="Cable">Cable</option>				YA
+    <option value="Camara">Camara</option>				YA
+    <option value="Camara Web">Camara Web</option>			YA
+    <option value="Case">Case</option>					YA
+    <option value="Celular">Celular</option>				YA	
+    <option value="Cooler Laptop">Cooler Laptop</option>		YA
+    <option value="Cooler de Aire">Cooler de Aire</option>		YA	
+    <option value="Cooler de liquido">Cooler de liquido</option>	YA
+    <option value="Disco Duro">Disco Duro</option>			YA
+    <option value="Escritorio">Escritorio</option>			YA
+    <option value="Fuente de poder">Fuente de poder</option>		YA
+    <option value="Gamepad">Gamepad</option>				YA
+    <option value="Impresor">Impresor</option>				YA
+    <option value="Laptop">Laptop</option>				YA
+    <option value="Memoria RAM">Memoria RAM</option>			YA
+    <option value="Memoria USB">Memoria USB</option>			YA
+    <option value="Monitor">Monitor</option>
+    <option value="Mouse">Mouse</option>
+    <option value="PC Escritorio">PC Escritorio</option>		YA
+    <option value="Placa Base">Placa Base</option>
+    <option value="Protector Para Celular">Protector Para Celular
+</option>
+    <option value="Proyectores">Proyectores</option>
+    <option value="SSD">SSD</option>
+    <option value="Silla">Silla</option>
+    <option value="SmartWatch">SmartWatch</option>
+    <option value="Tablet">Tablet</option>				YA
+    <option value="Tarjeta Grafica">Tarjeta Grafica</option>
+    <option value="Teclado">Teclado</option>
+    <option value="Tintas para impresora">Tintas para impresora
+</option>
+    <option value="Ventilador">Ventilador</option>
+</select>

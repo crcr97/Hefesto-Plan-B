@@ -1,0 +1,16 @@
+Tiendas:
+AEON 				San salvador 		YA	YA	YA
+Tecno Service 			San Salvador 		YA	YA	YA	
+Zona Digital 			San Salvador 		YA	YA 	YA
+Laptops AT			San Salvador		YA	YA	YA
+Laptop Valdez			La Libertad		YA	YA	YA	YA
+RAF El Salvador			San Salvador		YA	YA	YA
+Radioshack			Sonsonate		YA	YA	YA
+Piensa DS 			Ahuachapan 		YA	YA	YA
+Tech Center San Miguel 		San Miguel		YA	YA	YA
+Compu Centro			Morazan			YA	YA	YA
+ITECH COMPUTERS			Santa Ana		YA	YA	YA
+Link & Technology Store		San Vicente		YA	YA	YA
+Electronica Japonesa		Sonsonate		YA	YA	YA
+Electronica 2001		San Miguel		YA	YA	YA
+La Curacao			San Vicente		YA	YA	YA

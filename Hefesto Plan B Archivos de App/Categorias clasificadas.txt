@@ -1,0 +1,41 @@
+Perifericos:
+Adaptador
+Audifonos
+Bocinas
+Cables
+Camara
+Camara Web
+Gamepad
+Memoria USB
+Micro SD
+Monitor
+Mouse
+Mouse Pad
+Protector para celular
+Smartwatch
+Teclado
+
+Componentes:
+Cpu
+Case
+Cooler Laptop
+Cooler de Aire
+Cooler de liquido
+Disco duro
+Fuente de poder
+Memoria RAM
+Pasta Termica
+Placa Base
+SSD
+Tarjeta Grafica
+
+
+Oficina:
+Bolsones
+Escritorio
+Impresor
+Proyectores
+Router
+Silla
+Tinta para impresoras
+Ventilador
