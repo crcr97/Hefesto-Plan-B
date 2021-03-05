@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Dashboard - Brand</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+        <link href="assets/bootstrap/css/personal.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="page-top" class="bmd-drawer-overlay">
+        <div id="wrapper" style="background-color: rgba(0, 0, 0, 0.78);">
+            <nav class="accordion align-items-start bg-gradient-primary bmd-drawer-overlay navbar navbar-dark p-0 sidebar sidebar-dark toggled">
+                <div class="container-fluid d-flex flex-column h-100 justify-content-start p-0" style="background-color: #363737;">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="vistaTiendas.html"> <div class="sidebar-brand-icon">
+                            <img src="assets/img/logotipo/logoHEFESTO.png" class="img-fluid logotipoHEFESTOnavBar">
+                        </div> <div class="sidebar-brand-text mx-3">
+                            <span>HEFESTO</span>
+                        </div> </a>
+                    <hr class="sidebar-divider my-0">
+                    <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                        <li class="nav-item">
+                            <a class="nav-link pb-2 pt-2" href="index.html" id="navMenuPrincipal"><i class="fa-home fas"></i><span>Inicio</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaTiendas.html" id="navTiendas"><i class="fa-store fas"></i><span>Tiendas</span></a>
+                            <a class="nav-link  pb-2 pt-2" href="vistaFavoritos.html" id="navFavoritos"><i class="fa-heart fas"></i><span>Favoritos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pb-2 pt-2" href="vistaLaptops.html" id="navLaptops"><i class="fa-laptop fas"></i><span>Laptops</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaDesktops.html" id="navDesktops"><i class="fa-desktop fas"></i><span>Desktops</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" id="navPerifericos" href="vistaPerifericos.html"><i class="fa-headset fas"></i><span>Perifericos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" id="navComponentes" href="vistaComponentes.html"><i class="fa-memory fas"></i><span>Componentes</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaOficina.html" id="navOficina"><i class="fa-print fas"></i><span>Oficina</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaTablets.html" id="navTablets"><i class="fa-tablet-alt fas"></i><span>Tablets</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  pb-2 pt-2" href="vistaCelulares.html" id="navCelulares"><i class="fa-mob fa-mobile-alt fas"></i><span>Celulares</span></a>
+                        </li>
+                    </ul>
+                    <div class="text-center d-none d-md-inline">
+                        <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex flex-column" id="content-wrapper">
+                <div id="content">
+                    <nav class="mb-4 navbar navbar-expand shadow static-top topbar" style="background-color: rgba(0, 0, 0, 0.78);">
+                        <div class="container-fluid">
+                            <button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <form class="d-none d-sm-none form-inline ml-md-3 mr-auto mw-100 my-2 my-md-0 navbar-search">
+                                <div class="input-group">
+                                    <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary py-0" type="button">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <ul class="flex-nowrap ml-auto nav navbar-nav">
+                                <h6 class="font-weight-bolder mb-n1 mr-5 pr-1 text-center text-light">HEFESTO</h6>
+                            </ul>
+                            <ul class="nav navbar-nav flex-nowrap ml-auto">
+                                <li class="d-none d-sm-none dropdown nav-item no-arrow">
+                                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown" style="background-color: rgba(0, 0, 0, 0.78);">
+                                        <form class="form-inline mr-auto navbar-search w-100">
+                                            <div class="input-group">
+                                                <input class="bg-light form-control border-0 small" type="text" placeholder="Escribe para buscar">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary py-0" type="button">
+                                                        <i class="fas fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="container-fluid p-3">
+                        <div class="mt-n3 row">
+                            <div class="col">
+                                <div class="align-content-center align-items-center d-flex justify-content-center">
+                                    <h3 class="align-content-center align-items-center align-middle align-self-center d-flex flex-nowrap font-weight-bold justify-content-center text-lg-center text-md-center text-sm-center titulo-view" style="color: #4a4a4a;" id="titulo-view">Laptops</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-n1 mt-n1"/>
+                        <div class=" row">
+                            <div class="col">
+                                <div class="mt-3 row row-cols-2" id="laptops-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDFCGpgGKzioKc1qOfJmthkmMVfyvVw_wU",
+            authDomain: "hefesto-608bb.firebaseapp.com",
+            databaseURL: "https://hefesto-608bb.firebaseio.com",
+            projectId: "hefesto-608bb",
+            storageBucket: "hefesto-608bb.appspot.com",
+            messagingSenderId: "174762986",
+            appId: "1:174762986:web:a1da2d2dcf9a3d39212093",
+            measurementId: "G-YZV349VZ3R"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/chart.min.js"></script>
+        <script src="assets/js/bs-init.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <!-- CODIGO PERSONAL -->
+        <script src="assets/js/HefestoJS/vistaDetalleCategoria.js"></script>
+    </body>
+</html>
